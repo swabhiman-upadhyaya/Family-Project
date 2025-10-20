@@ -1,0 +1,152 @@
+@font-face {
+  font-family: Machinas;
+  src: url(./Machinas\ Typeface.ttf);
+}
+@font-face {
+  font-family: italic;
+  src: url(./zai_ItalicHandCalligraphy.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main header {
+  background-image: url(./img1.jpg);
+  height: 60%;
+  filter: brightness(0.9);
+  background-size: cover;
+  background-position: center;
+}
+main header nav {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 40vw;
+  align-items: center;
+  filter: brightness(3);
+}
+main header nav #main-nav {
+  display: flex;
+  gap: 4vw;
+  filter: brightness(3);
+  font-weight: 650;
+}
+main header nav a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+}
+main header nav img {
+  height: 70px;
+  width: 70px;
+}
+main header Section.view1 {
+  text-align: center;
+  filter: brightness(3);
+  color: white;
+}
+main header Section.view1 h2 {
+  margin: 0;
+  font-size: 2.8vw;
+  font-family: Machinas;
+}
+main header Section.view1 h1 {
+  font-size: 2.5vw;
+}
+main header Section.view1 p {
+  margin-left: 20vw;
+  text-align: center;
+  width: 60vw;
+  font-weight: 600;
+}
+main header Section.view1 button {
+  padding: 10px 13px;
+  margin: 2vh 0;
+  filter: brightness(0.5);
+  cursor: pointer;
+  color: black;
+  border-radius: 20px;
+  border: none;
+  transition: all 0.7s ease;
+}
+main header Section.view1 button:hover {
+  background-color: black;
+  color: white;
+}
+main header Section.view1 #icon {
+  display: flex;
+  flex-direction: column;
+}
+main header Section.view1 #icon .ri-arrow-down-long-fill {
+  font-size: 25px;
+  font-weight: 800;
+}
+main header Section.view1 #icon .ri-checkbox-blank-circle-fill {
+  font-size: 15px;
+}
+main Section.view2 {
+  margin-top: 15px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+main Section.view2 #first,
+main Section.view2 #fourth {
+  text-align: center;
+}
+main Section.view2 #first h1,
+main Section.view2 #fourth h1 {
+  font-family: Machinas;
+  font-size: 4.4vw;
+}
+main Section.view2 #first h2,
+main Section.view2 #fourth h2 {
+  color: orangered;
+  padding-top: 4vh;
+  margin-left: 6vw;
+  font-family: Machinas;
+  font-size: 2.4vw;
+}
+main Section.view2 #first p,
+main Section.view2 #fourth p {
+  padding-left: 11vw;
+  width: 28vw;
+  font-size: 1.2vw;
+}
+main Section.view2 #first button,
+main Section.view2 #fourth button {
+  margin-top: 1.1vw;
+  padding: 8px;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+main Section.view2 #first button:hover,
+main Section.view2 #fourth button:hover {
+  color: white;
+  background-color: black;
+}
+main Section.view2 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+main Section.view2 #second img {
+  height: 40vh;
+  width: 49vw;
+}
+main Section.view2 #third img {
+  width: 50vw;
+  height: 40vh;
+}/*# sourceMappingURL=style.css.map */
