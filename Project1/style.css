@@ -1,10 +1,6 @@
 @font-face {
-  font-family: Machinas;
-  src: url(./Machinas\ Typeface.ttf);
-}
-@font-face {
-  font-family: italic;
-  src: url(./zai_ItalicHandCalligraphy.otf);
+  font-family: AloneTogether;
+  src: url(./AloneTogether.otf);
 }
 * {
   margin: 0;
@@ -15,138 +11,110 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: italic;
 }
 
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
 main header {
+  padding: 1rem;
   background-image: url(./img1.jpg);
-  height: 60%;
-  filter: brightness(0.9);
   background-size: cover;
   background-position: center;
 }
 main header nav {
-  padding: 15px;
   display: flex;
-  justify-content: center;
-  gap: 40vw;
+  justify-content: space-evenly;
   align-items: center;
-  filter: brightness(3);
 }
-main header nav #main-nav {
+main header nav .top img {
+  width: 4.5rem;
+}
+main header nav .bottom {
   display: flex;
-  gap: 4vw;
-  filter: brightness(3);
-  font-weight: 650;
+  gap: 3rem;
+  align-items: center;
 }
-main header nav a {
+main header nav .bottom a {
   text-decoration: none;
   color: white;
-  display: flex;
 }
-main header nav img {
-  height: 70px;
-  width: 70px;
-}
-main header Section.view1 {
-  text-align: center;
-  filter: brightness(3);
-  color: white;
-}
-main header Section.view1 h2 {
-  margin: 0;
-  font-size: 2.8vw;
-  font-family: Machinas;
-}
-main header Section.view1 h1 {
-  font-size: 2.5vw;
-}
-main header Section.view1 p {
-  margin-left: 20vw;
-  text-align: center;
-  width: 60vw;
-  font-weight: 600;
-}
-main header Section.view1 button {
-  padding: 10px 13px;
-  margin: 2vh 0;
-  filter: brightness(0.5);
+main header nav .bottom button {
   cursor: pointer;
-  color: black;
-  border-radius: 20px;
-  border: none;
-  transition: all 0.7s ease;
-}
-main header Section.view1 button:hover {
-  background-color: black;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  background-color: #ff4b0a;
   color: white;
+  border-radius: 1.3rem;
+  border: none;
+  transition: all ease 0.8s;
 }
-main header Section.view1 #icon {
+main header nav .bottom button:hover {
+  color: black;
+  background-color: #ff7c4d;
+}
+main header nav .bottom button:active {
+  background-color: #ff4b0a;
+}
+main header section.view1 {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-main header Section.view1 #icon .ri-arrow-down-long-fill {
-  font-size: 25px;
-  font-weight: 800;
+main header section.view1 h2 {
+  font-family: AloneTogether;
+  color: #ff4b0a;
+  font-size: 1.8rem;
 }
-main header Section.view1 #icon .ri-checkbox-blank-circle-fill {
-  font-size: 15px;
+main header section.view1 h1 {
+  color: white;
+  font-size: 2.3rem;
 }
-main Section.view2 {
-  margin-top: 15px;
-  border-radius: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
-}
-main Section.view2 #first,
-main Section.view2 #fourth {
+main header section.view1 p {
+  margin: 0.5rem;
   text-align: center;
-}
-main Section.view2 #first h1,
-main Section.view2 #fourth h1 {
-  font-family: Machinas;
-  font-size: 4.4vw;
-}
-main Section.view2 #first h2,
-main Section.view2 #fourth h2 {
-  color: orangered;
-  padding-top: 4vh;
-  margin-left: 6vw;
-  font-family: Machinas;
-  font-size: 2.4vw;
-}
-main Section.view2 #first p,
-main Section.view2 #fourth p {
-  padding-left: 11vw;
-  width: 28vw;
-  font-size: 1.2vw;
-}
-main Section.view2 #first button,
-main Section.view2 #fourth button {
-  margin-top: 1.1vw;
-  padding: 8px;
-  border-radius: 20px;
+  color: white;
   font-size: 1.1rem;
-  cursor: pointer;
-  transition: all 0.6s ease;
+  width: 75rem;
+  line-height: 1.3;
 }
-main Section.view2 #first button:hover,
-main Section.view2 #fourth button:hover {
+main header section.view1 .btn-fst {
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all ease 0.8s;
+}
+main header section.view1 .btn-fst:hover {
   color: white;
   background-color: black;
 }
-main Section.view2 img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+main header section.view1 .btn-fst:active {
+  background-color: white;
+  color: black;
 }
-main Section.view2 #second img {
-  height: 40vh;
-  width: 49vw;
+main header section.view1 .icon {
+  margin-top: 0.5rem;
 }
-main Section.view2 #third img {
-  width: 50vw;
-  height: 40vh;
+main header section.view1 .icon .btn-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  background-color: grey;
+  border: none;
+  padding: 0.4rem 0.4rem;
+  border-radius: 30%;
+}
+main header section.view1 .icon .ri-arrow-down-long-fill {
+  font-size: 1rem;
+}
+main header section.view1 .icon .ri-checkbox-blank-circle-fill {
+  font-size: 0.6rem;
 }/*# sourceMappingURL=style.css.map */
