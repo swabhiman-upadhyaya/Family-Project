@@ -26,7 +26,7 @@ main {
     header {
         width: 100%;
         height: 100%;
-        padding: 1rem;  
+        padding: 1rem;
         background-image: url(./img1.jpg);
         background-size: cover;
         background-position: center;
@@ -253,32 +253,94 @@ main {
 
     section.view2 {
         width: 100%;
-        padding: 1rem;  
+        padding: 1rem;
         background-color: rgb(255, 189, 189);
-
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+        h2 {
+            font-family: AloneTogether;
+            color: #ff4b0a;
+            font-size: 1.3rem;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+        }
+
+        p {
+            margin: 0.5rem;
+            text-align: center;
+            color: white;
+            font-size: 1.1rem;
+            line-height: 1.3;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 0.6rem 0.8rem;
+            font-size: 1rem;
+            background-color: #ff4b0a;
+            color: white;
+            border-radius: 1.3rem;
+            border: none;
+            transition: all ease 1s;
+            margin: 0.7rem;
+        }
+
+        button:hover {
+            color: black;
+            background-color: #ff4400;
+        }
+
+        button:active {
+            background-color: #ff4400;
+            color: white;
+        }
+    }
+
+    section.view3 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .top {
+            padding: 1rem;
+            width: 100%;
+            text-align: center;
+            display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
 
-            h2 {
-                font-family: AloneTogether;
-                color: #ff4b0a;
-                font-size: 1.3rem;
-            }
+            .headings {
+                display: flex;
+                flex-direction: column;
 
-            h1 {
-                text-align: center;
-                color: white;
-                font-size: 2rem;
+                h2 {
+                    color: #ff4b0a;
+                    font-family: AloneTogether;
+                    align-self: flex-end;
+                    margin-left: 8rem;
+                    font-size: 1.2rem;
+                }
+
+                h1 {
+                    font-style: italic;
+                    font-family: AloneTogether;
+                    font-size: 1.8rem;
+                }
             }
 
             p {
-                margin: 0.5rem;
-                text-align: center;
-                color: white;
                 font-size: 1.1rem;
-                line-height: 1.3;
+                text-align: center;
+
             }
 
             button {
@@ -289,19 +351,26 @@ main {
                 color: white;
                 border-radius: 1.3rem;
                 border: none;
-                transition: all ease 1s;
+                transition: all ease 0.8s;
                 margin: 0.7rem;
             }
 
             button:hover {
                 color: black;
-                background-color: #ff4400;
+                background-color: #ff7c4d;
             }
+        }
 
-            button:active {
-                background-color: #ff4400;
-                color: white;
+        .bottom {
+            width: 100%;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                height: 350px;
             }
+        }
     }
 
 }
@@ -313,6 +382,19 @@ main {
         section.view1 {
             display: grid;
             grid-template-columns: 1fr 1fr;
+        }
+
+        section.view3 {
+            flex-direction: row;
+            gap: 0.1rem;
+            .top {
+                background-color: #d7d7d7;
+            }
+            .bottom {
+                img {
+                    height: 500px;
+                }
+            }
         }
     }
 }
