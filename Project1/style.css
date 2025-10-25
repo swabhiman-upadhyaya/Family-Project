@@ -5,6 +5,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html,
@@ -12,6 +13,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: italic;
+  overflow-x: hidden;
 }
 
 main {
@@ -135,7 +137,8 @@ main section.view1 .top-left button {
 }
 main section.view1 .top-left button:hover {
   color: black;
-  background-color: #ff7c4d;
+  background-color: white;
+  border: 1.5px solid black;
 }
 main section.view1 .top-right {
   overflow: hidden;
@@ -179,17 +182,18 @@ main section.view1 .bottom-right button {
   color: white;
   border-radius: 1.3rem;
   border: none;
-  transition: all ease 0.8s;
+  transition: all ease 0.5s;
   margin: 0.7rem;
 }
 main section.view1 .bottom-right button:hover {
   color: black;
-  background-color: #ff7c4d;
+  background-color: white;
+  border: 1.5px solid black;
 }
 main section.view2 {
   width: 100%;
   padding: 1rem;
-  background-color: rgb(255, 189, 189);
+  background-color: #ffbdbd;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -220,12 +224,12 @@ main section.view2 button {
   color: white;
   border-radius: 1.3rem;
   border: none;
-  transition: all ease 1s;
+  transition: all ease 0.8s;
   margin: 0.7rem;
 }
 main section.view2 button:hover {
   color: black;
-  background-color: #ff4400;
+  background-color: white;
 }
 main section.view2 button:active {
   background-color: #ff4400;
@@ -278,7 +282,7 @@ main section.view3 .top button {
 }
 main section.view3 .top button:hover {
   color: black;
-  background-color: #ff7c4d;
+  background-color: white;
 }
 main section.view3 .bottom {
   width: 100%;
@@ -290,6 +294,56 @@ main section.view3 .bottom img {
   -o-object-position: center;
      object-position: center;
   height: 350px;
+}
+main section.view4 {
+  width: 100%;
+}
+main section.view4 .cards {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.3rem;
+}
+main section.view4 .cards .card1,
+main section.view4 .cards .card3,
+main section.view4 .cards .card4 {
+  border-radius: 0.3rem;
+  width: 100%;
+}
+main section.view4 .cards .card1 img,
+main section.view4 .cards .card3 img,
+main section.view4 .cards .card4 img {
+  border-radius: 0.3rem;
+  height: 300px;
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+main section.view4 .cards .card2 {
+  width: 100%;
+  height: 300px;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffbdbd;
+}
+main section.view4 .cards .card2 i {
+  opacity: 0.7;
+  font-size: 1.3rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.4rem;
+  background-color: grey;
+  cursor: pointer;
+  border-radius: 0.4rem;
+}
+main section.view4 .cards .card2 h2 {
+  font-family: AloneTogether;
 }
 
 @media (min-width: 800px) {
@@ -306,5 +360,8 @@ main section.view3 .bottom img {
   }
   main section.view3 .bottom img {
     height: 500px;
+  }
+  main section.view4 .cards {
+    flex-direction: row;
   }
 }/*# sourceMappingURL=style.css.map */

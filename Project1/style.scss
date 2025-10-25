@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html,
@@ -13,6 +14,7 @@ body {
     height: 100%;
     width: 100%;
     font-family: italic;
+    overflow-x: hidden;
 }
 
 main {
@@ -189,7 +191,8 @@ main {
 
             button:hover {
                 color: black;
-                background-color: #ff7c4d;
+                background-color: white;
+                border: 1.5px solid black;
             }
         }
 
@@ -239,13 +242,14 @@ main {
                 color: white;
                 border-radius: 1.3rem;
                 border: none;
-                transition: all ease 0.8s;
+                transition: all ease 0.5s;
                 margin: 0.7rem;
             }
 
             button:hover {
                 color: black;
-                background-color: #ff7c4d;
+                background-color: white;
+                border: 1.5px solid black;
             }
         }
 
@@ -254,7 +258,7 @@ main {
     section.view2 {
         width: 100%;
         padding: 1rem;
-        background-color: rgb(255, 189, 189);
+        background-color: #ffbdbd;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -289,13 +293,13 @@ main {
             color: white;
             border-radius: 1.3rem;
             border: none;
-            transition: all ease 1s;
+            transition: all ease 0.8s;
             margin: 0.7rem;
         }
 
         button:hover {
             color: black;
-            background-color: #ff4400;
+            background-color: white;
         }
 
         button:active {
@@ -357,7 +361,7 @@ main {
 
             button:hover {
                 color: black;
-                background-color: #ff7c4d;
+                background-color: white;
             }
         }
 
@@ -369,6 +373,58 @@ main {
                 object-fit: cover;
                 object-position: center;
                 height: 350px;
+            }
+        }
+    }
+
+    section.view4 {
+        width: 100%;
+
+        .cards {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 0.3rem;
+
+            .card1,
+            .card3,
+            .card4 {
+                border-radius: 0.3rem;
+                width: 100%;
+
+                img {
+                    border-radius: 0.3rem;
+                    height: 300px;
+                    width: 100%;
+                    display: block;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+
+            .card2 {
+                width: 100%;
+                height: 300px;
+                border-radius: 0.3rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: #ffbdbd;
+
+                i {
+                    opacity: 0.7;
+                    font-size: 1.3rem;
+                    width: fit-content;
+                    padding: 0.4rem;
+                    background-color: grey;
+                    cursor: pointer;
+                    border-radius: 0.4rem;
+                }
+
+                h2 {
+                    font-family: AloneTogether;
+                }
             }
         }
     }
@@ -387,13 +443,22 @@ main {
         section.view3 {
             flex-direction: row;
             gap: 0.1rem;
+
             .top {
                 background-color: #d7d7d7;
             }
+
             .bottom {
                 img {
                     height: 500px;
                 }
+            }
+        }
+
+        section.view4 {
+            
+            .cards {
+                flex-direction: row;
             }
         }
     }
