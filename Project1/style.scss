@@ -429,37 +429,166 @@ main {
         }
     }
 
-}
+    section.view5 {
+        display: flex;
+        flex-direction: column;
+        background-color: #343434;
+        color: #989898;
+        padding: 0.8rem;
+        gap: 0.5rem;
 
-@media (min-width: 800px) {
-    main {
-        // header {}
+        .first {
+            padding: 0rem 2.1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
-        section.view1 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            h3 {
+                color: white;
+                font-family: AloneTogether;
+
+                span {
+                    font-size: 1.4rem;
+                    color: #ff4400;
+                }
+            }
+
+            p {
+                font-size: 1rem;
+                padding: 0rem 0.8rem;
+            }
+
+            button {
+                margin: 0.4rem 0.9rem;
+                padding: 0.3rem 0.4rem;
+                border-radius: 1rem;
+                border: none;
+                transition: all 0.8s ease;
+                cursor: pointer;
+            }
+
+            button:hover {
+                color: white;
+                background-color: black;
+                border: 1px solid white;
+            }
+
         }
 
-        section.view3 {
-            flex-direction: row;
-            gap: 0.1rem;
+        .second {
+            padding: 0rem 2.1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
             .top {
-                background-color: #d7d7d7;
+                h4 {
+                    color: white;
+                    font-size: 1.2rem;
+
+                    span {
+                        color: #ff4400;
+                    }
+                }
             }
 
             .bottom {
-                img {
-                    height: 500px;
+                margin: 0.2rem;
+                display: flex;
+
+                p {
+                    font-size: 1rem;
+                    padding: 0rem 0.8rem;
                 }
             }
         }
 
-        section.view4 {
-            
-            .cards {
-                flex-direction: row;
+        .three {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .top {
+                h4 {
+                    color: white;
+                    font-size: 1rem;
+
+                    span {
+                        color: #ff4400;
+                    }
+                }
             }
         }
+
+        .four {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .top {
+                h4 {
+                    color: white;
+                    font-size: 1rem;
+
+                    span {
+                        color: #ff4400;
+                    }
+                }
+            }
+
+            .bottom {
+                display: flex;
+                flex-direction: column;
+                gap: 0.35rem;
+
+                i {
+                    color: #e1e1e1;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 800px) {
+    main {
+    // header {}
+
+    section.view1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section.view3 {
+        flex-direction: row;
+        gap: 0.1rem;
+
+        .top {
+            background-color: #d7d7d7;
+        }
+
+        .bottom {
+            img {
+                height: 500px;
+            }
+        }
+    }
+
+    section.view4 {
+
+        .cards {
+            flex-direction: row;
+        }
+    }
+
+    section.view5 {
+        flex-direction: row;
+    }
+
     }
 }
