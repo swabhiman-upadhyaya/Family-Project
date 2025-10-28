@@ -350,15 +350,13 @@ main section.view5 {
   flex-direction: column;
   background-color: #343434;
   color: #989898;
-  padding: 0.8rem;
-  gap: 0.5rem;
+  padding: 1rem;
+  gap: 0.6rem;
 }
 main section.view5 .first {
-  padding: 0rem 2.1rem;
   display: flex;
+  gap: 0.4rem;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 main section.view5 .first h3 {
   color: white;
@@ -370,10 +368,11 @@ main section.view5 .first h3 span {
 }
 main section.view5 .first p {
   font-size: 1rem;
-  padding: 0rem 0.8rem;
 }
 main section.view5 .first button {
-  margin: 0.4rem 0.9rem;
+  margin-top: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
   padding: 0.3rem 0.4rem;
   border-radius: 1rem;
   border: none;
@@ -386,49 +385,58 @@ main section.view5 .first button:hover {
   border: 1px solid white;
 }
 main section.view5 .second {
-  padding: 0rem 2.1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  gap: 0.4rem;
 }
 main section.view5 .second .top h4 {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 main section.view5 .second .top h4 span {
   color: #ff4400;
 }
 main section.view5 .second .bottom {
-  margin: 0.2rem;
   display: flex;
+  gap: 0.4rem;
+  align-items: center;
 }
-main section.view5 .second .bottom p {
+main section.view5 .second .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+main section.view5 .second .bottom .text p {
   font-size: 1rem;
-  padding: 0rem 0.8rem;
+}
+main section.view5 .second .bottom .text p:nth-child(2) {
+  color: #dfdfdf;
 }
 main section.view5 .three {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  gap: 0.1rem;
 }
 main section.view5 .three .top h4 {
   color: white;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 main section.view5 .three .top h4 span {
   color: #ff4400;
 }
+main section.view5 .three .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
 main section.view5 .four {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  gap: 0.4rem;
 }
 main section.view5 .four .top h4 {
   color: white;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 main section.view5 .four .top h4 span {
   color: #ff4400;
@@ -436,10 +444,14 @@ main section.view5 .four .top h4 span {
 main section.view5 .four .bottom {
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
+  gap: 0.5rem;
 }
 main section.view5 .four .bottom i {
-  color: #e1e1e1;
+  cursor: pointer;
+  padding: 0.2rem;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
   font-size: 1.1rem;
 }
 
@@ -462,6 +474,21 @@ main section.view5 .four .bottom i {
     flex-direction: row;
   }
   main section.view5 {
+    display: flex;
     flex-direction: row;
+    gap: 0.6rem;
+  }
+  main section.view5 .first,
+  main section.view5 .second,
+  main section.view5 .four {
+    flex: 1;
+  }
+}
+@media (min-width: 500px) {
+  section.view5 .first p {
+    width: 19rem;
+  }
+  section.view5 .second p {
+    width: 17rem;
   }
 }/*# sourceMappingURL=style.css.map */

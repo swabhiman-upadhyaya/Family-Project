@@ -434,15 +434,14 @@ main {
         flex-direction: column;
         background-color: #343434;
         color: #989898;
-        padding: 0.8rem;
-        gap: 0.5rem;
+        padding: 1rem;
+        gap: 0.6rem;
 
         .first {
-            padding: 0rem 2.1rem;
             display: flex;
+            gap: 0.4rem;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+
 
             h3 {
                 color: white;
@@ -456,11 +455,11 @@ main {
 
             p {
                 font-size: 1rem;
-                padding: 0rem 0.8rem;
             }
 
             button {
-                margin: 0.4rem 0.9rem;
+                margin-top: 1rem;
+                width: fit-content;
                 padding: 0.3rem 0.4rem;
                 border-radius: 1rem;
                 border: none;
@@ -477,16 +476,14 @@ main {
         }
 
         .second {
-            padding: 0rem 2.1rem;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            gap: 0.4rem;
 
             .top {
                 h4 {
                     color: white;
-                    font-size: 1.2rem;
+                    font-size: 1.1rem;
 
                     span {
                         color: #ff4400;
@@ -495,12 +492,23 @@ main {
             }
 
             .bottom {
-                margin: 0.2rem;
                 display: flex;
+                gap: 0.4rem;
+                align-items: center;
 
-                p {
-                    font-size: 1rem;
-                    padding: 0rem 0.8rem;
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.2rem;
+
+                    p {
+                        font-size: 1rem;
+                    }
+
+                    p:nth-child(2) {
+                        color: #dfdfdf;
+                    }
+
                 }
             }
         }
@@ -508,31 +516,12 @@ main {
         .three {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            gap: 0.1rem;
 
             .top {
                 h4 {
                     color: white;
-                    font-size: 1rem;
-
-                    span {
-                        color: #ff4400;
-                    }
-                }
-            }
-        }
-
-        .four {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            .top {
-                h4 {
-                    color: white;
-                    font-size: 1rem;
+                    font-size: 1.1rem;
 
                     span {
                         color: #ff4400;
@@ -543,10 +532,37 @@ main {
             .bottom {
                 display: flex;
                 flex-direction: column;
-                gap: 0.35rem;
+                gap: 0.2rem;
+            }
+        }
+
+        .four {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+
+            .top {
+                h4 {
+                    color: white;
+                    font-size: 1.1rem;
+
+                    span {
+                        color: #ff4400;
+                    }
+                }
+            }
+
+            .bottom {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
 
                 i {
-                    color: #e1e1e1;
+                    cursor: pointer;
+                    padding: 0.2rem;
+                    border-radius: 50%;
+                    background-color: white;
+                    color: black;
                     font-size: 1.1rem;
                 }
             }
@@ -557,38 +573,59 @@ main {
 
 @media (min-width: 800px) {
     main {
-    // header {}
 
-    section.view1 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    section.view3 {
-        flex-direction: row;
-        gap: 0.1rem;
-
-        .top {
-            background-color: #d7d7d7;
+        section.view1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
 
-        .bottom {
-            img {
-                height: 500px;
+        section.view3 {
+            flex-direction: row;
+            gap: 0.1rem;
+
+            .top {
+                background-color: #d7d7d7;
+            }
+
+            .bottom {
+                img {
+                    height: 500px;
+                }
             }
         }
-    }
 
-    section.view4 {
+        section.view4 {
+            .cards {
+                flex-direction: row;
+            }
+        }
 
-        .cards {
+        section.view5 {
+            display: flex;
             flex-direction: row;
+            gap: 0.6rem;
+
+            .first,
+            .second,
+            .four {
+                flex: 1;
+            }            
         }
     }
+}
 
+@media (min-width: 500px) {
     section.view5 {
-        flex-direction: row;
-    }
-
+        .first {
+            p {
+                width: 19rem;
+            }
+        }
+        
+        .second {
+            p {
+                width: 17rem;
+            }
+        }
     }
 }
