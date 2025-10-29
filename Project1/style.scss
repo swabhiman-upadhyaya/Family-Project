@@ -556,6 +556,7 @@ main {
                 display: flex;
                 flex-direction: column;
                 gap: 0.5rem;
+                text-align: left;
 
                 i {
                     cursor: pointer;
@@ -565,7 +566,43 @@ main {
                     color: black;
                     font-size: 1.1rem;
                 }
+                
             }
+        }
+
+    }
+
+    footer {
+        position: sticky;
+        bottom: 0;
+        padding: 1rem 0.5rem;
+        background-color: #414141;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+
+        .top {
+            text-align: center;
+            p {
+                span {
+                    color: #ff4400;
+                    font-weight: bolder;
+                }
+            }
+        }
+
+        .bottom {
+            display: flex;
+            gap: 0.2rem;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+            
         }
     }
 
@@ -607,25 +644,20 @@ main {
 
             .first,
             .second,
+            // .third,
             .four {
                 flex: 1;
-            }            
+            }   
+            .four {
+                margin-left: 5rem;
+            }         
+        }
+
+        footer {
+            padding: 1rem 2rem;
+            flex-direction: row;
+            justify-content: space-between;
         }
     }
 }
 
-@media (min-width: 500px) {
-    section.view5 {
-        .first {
-            p {
-                width: 19rem;
-            }
-        }
-        
-        .second {
-            p {
-                width: 17rem;
-            }
-        }
-    }
-}

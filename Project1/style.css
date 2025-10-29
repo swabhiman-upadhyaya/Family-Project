@@ -445,6 +445,7 @@ main section.view5 .four .bottom {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  text-align: left;
 }
 main section.view5 .four .bottom i {
   cursor: pointer;
@@ -453,6 +454,33 @@ main section.view5 .four .bottom i {
   background-color: white;
   color: black;
   font-size: 1.1rem;
+}
+main footer {
+  position: sticky;
+  bottom: 0;
+  padding: 1rem 0.5rem;
+  background-color: #414141;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+main footer .top {
+  text-align: center;
+}
+main footer .top p span {
+  color: #ff4400;
+  font-weight: bolder;
+}
+main footer .bottom {
+  display: flex;
+  gap: 0.2rem;
+}
+main footer .bottom a {
+  text-decoration: none;
+  color: white;
 }
 
 @media (min-width: 800px) {
@@ -483,12 +511,12 @@ main section.view5 .four .bottom i {
   main section.view5 .four {
     flex: 1;
   }
-}
-@media (min-width: 500px) {
-  section.view5 .first p {
-    width: 19rem;
+  main section.view5 .four {
+    margin-left: 5rem;
   }
-  section.view5 .second p {
-    width: 17rem;
+  main footer {
+    padding: 1rem 2rem;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }/*# sourceMappingURL=style.css.map */
